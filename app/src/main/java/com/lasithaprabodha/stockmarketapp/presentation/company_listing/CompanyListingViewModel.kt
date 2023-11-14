@@ -40,7 +40,7 @@ class CompanyListingViewModel @Inject constructor(
     }
 
     private fun getCompanyListings(
-        query: String = state.searchQuery.toLowerCase(),
+        query: String = state.searchQuery.lowercase(),
         fetchFromRemote: Boolean = false
     ) {
         viewModelScope.launch {
